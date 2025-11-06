@@ -1,0 +1,1 @@
+web: node node_module/prisma/build/index.js migrate deploy && npm run start:prod
