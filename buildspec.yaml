@@ -1,5 +1,5 @@
 version: 0.2
-phasesL:
+phases:
   install:
     runtime-versions:
       nodejs: latest
@@ -8,7 +8,7 @@ phasesL:
   build:
     commands:
       - npx prisma generate
-      - npm build
+      - npm run build
 artifacts:
   files:
     - '**/*'
